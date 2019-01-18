@@ -17,7 +17,7 @@ USER root
 # Caffe
 #RUN conda install --quiet --yes  caffe && \
 #RUN conda install --quiet --yes -c anaconda caffe-gpu 
-RUN conda install --quiet --yes -c caffe-gpu 
+RUN conda install --quiet --yes caffe-gpu 
 
 
 # Caffe2
