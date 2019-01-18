@@ -16,6 +16,8 @@ USER root
 # Install caffe and caffe2 packages
 # Caffe
 #RUN conda install --quiet --yes  caffe && \
+#RUN conda install --quiet --yes -c anaconda caffe-gpu && \
+
 
 
 # Caffe2
