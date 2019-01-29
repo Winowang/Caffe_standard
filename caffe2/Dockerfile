@@ -17,16 +17,16 @@ USER root
 # Caffe
 #RUN conda install --quiet --yes  caffe && \
 #RUN conda install --quiet --yes -c anaconda caffe-gpu 
-RUN conda install --quiet --yes caffe-gpu 
+#RUN conda install --quiet --yes caffe-gpu 
 
 
 # Caffe2
 # please vist the URL https://caffe2.ai/docs/getting-started.html?platform=ubuntu&configuration=prebuilt to check more verions for cpu or gpu
 #RUN conda install --quiet --yes  -c caffe2 caffe2 && \
-#RUN conda install --yes \
-#    'qt=5.9.*' \
-#    'pyqt=5.9.*'  && \
-#    conda install --yes  -c caffe2 caffe2 && \
+RUN conda install --yes \
+    'qt=5.9.*' \
+    'pyqt=5.9.*'  && \
+    conda install --yes  -c caffe2 caffe2 && \
     
 RUN conda remove --quiet --yes --force qt pyqt && \
     conda clean -tipsy && \
